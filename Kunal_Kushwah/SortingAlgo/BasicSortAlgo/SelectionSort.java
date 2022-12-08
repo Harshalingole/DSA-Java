@@ -15,7 +15,7 @@ public class SelectionSort {
         for (int i = 0; i < arr.length - 1; i++) {
             int minpos = i;
             // looping in unsorted array to find smallest element in order to updated minpos
-            for (int j = i+ 1; j < arr.length -2; j++) {
+            for (int j = i+ 1; j <= arr.length -1; j++) {
                 // finding smallest element 
                 if (arr[minpos] > arr[j]) {
                     // updating smallest element value
