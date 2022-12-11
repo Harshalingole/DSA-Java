@@ -3,11 +3,16 @@ package Apna_College.Learning.BitManipulation;
 public class BitOperations {
     public static void main(String[] args) {
         System.out.println("Bit Operations");
-        System.out.println(getIthBit(4, 2));
-        System.out.println(setIthBit(10, 2));
-        System.out.println(clearItBit(10, 1));
+        System.out.println(getIthBit(9, 0));
+        System.out.println(ithBit(9, 0));
+        // System.out.println(setIthBit(10, 2));
+        // System.out.println(clearItBit(10, 1));
     }
-
+    // My solution more optimize
+    public static int ithBit(int n,int i) {
+        int bitmask = n >> i;
+        return bitmask & 1;
+    }
     // Get ith bit
     public static int getIthBit(int num,int i){
         int bitmask = 1 << i;
